@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 echo 'Cloning repository...'
-                git 'https://github.com/hoailamcenter/jenskin-ngrok.git'
+                git branch: 'main', url: 'https://github.com/hoailamcenter/jenskin-ngrok.git'
             }
         }
     }
